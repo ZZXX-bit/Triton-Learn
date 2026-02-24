@@ -153,7 +153,4 @@ def benchmark(M, N, K, provider):
 
 if __name__ == "__main__":
     verify()
-    try:
-        benchmark.run(print_data=True)
-    except ModuleNotFoundError:
-        print("（跳过 benchmark：缺少 matplotlib，可用 pip install matplotlib 安装）")
+    benchmark.run(print_data=True)
